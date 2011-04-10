@@ -1,0 +1,15 @@
+﻿
+<form id="uploadmain" name="uploadmain" action="http://tu.6.cn/upload/" method="post" enctype="multipart/form-data">
+<input type="hidden" name="sessid" value="">
+<input name="upfile[]" size="20" type="file" onfocus="javascript:prew(this);"/>
+<button type="submit">upload</button>
+<input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+<input type="hidden" name="action" value="1">
+</form>
+<script>
+function prew(o){
+  var u = o.value;
+  if(u.length<3)return;
+  document.getElementById("hehe").innerHTML = "<img src='"+u+"' />";
+}
+</script>

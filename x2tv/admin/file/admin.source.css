@@ -1,0 +1,163 @@
+*{margin:0;padding:0;}
+img{border:0;}
+body{margin:auto;text-align:center;font-family:Georgia,Tahoma,arial,sans-serif;font-size:12px;}
+
+a:link,a:visited{text-decoration:none;color:#36c}
+a:hover,a:active{text-decoration:underline}
+
+#wrapper{width:992px;padding:0 9px;}
+#main{margin:5px auto;text-align:left;}
+
+input.text{border:1px solid;border-color:#666666 #ccc #ccc #ccc;background-color:#fff;color:#000;padding:5px 0 2px 3px;margin:1px}
+input.readonly{background:#eee}
+input.focus,#search input:focus{border:2px solid #6694e3!important;margin:0!important;outline:0!important}
+input.button,a.button{border:1px solid #bbb;padding:1px 2px; margin:1px;}
+a.button,a.button:hover,a.button:active{text-decoration:none;color:#000;padding:3px;}
+
+
+.control{
+	padding-left:10px;background:#E0ECFF;border-bottom:1px solid #6694e3
+}
+
+    /* Start custom button CSS here
+    ---------------------------------------- */
+    .btn {
+      display:inline-block;
+      background:none;
+      margin:0;
+      padding:3px 0;
+      border-width:0;
+      overflow:visible;
+      font:100%/1.2 Arial,Sans-serif;
+      text-decoration:none;
+      color:#333;
+      }
+    * html button.btn {
+      padding-bottom:1px;
+      }
+    /* Immediately below is a temporary hack to serve the 
+       following margin values only to Gecko browsers
+       Gecko browsers add an extra 3px of left/right 
+       padding to button elements which can't be overriden.
+       Thus, we use -3px of left/right margin to overcome this. */
+    html:not([lang*=""]) button.btn {
+      margin:0 -3px;
+      }
+    .btn span {
+      margin:0;
+      padding:3px 0;
+      border-left:1px solid #bbb;
+      border-right:1px solid #aaa;
+      }
+    * html .btn span {
+      padding-top:0;
+      }
+    .btn span span {
+      position:relative;
+      padding:3px .4em;
+      border-width:0;
+      border-top:1px solid #bbb;
+      border-bottom:1px solid #aaa;
+      }
+    
+    /* pill classes only needed if using pill style buttons ( LEFT | CENTER | RIGHT ) */
+    button.pill-l span {
+      border-right-width:0;
+      }
+    button.pill-l span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-c span {
+      border-right-style:none;
+      border-left-color:#fff;
+      }
+    button.pill-c span span {
+      border-right:1px solid #bbb;
+      }
+    button.pill-r span {
+      border-left-color:#fff;
+      }
+    
+    /* only needed if implementing separate hover/focus/active state for buttons */
+    .btn:hover span, .btn:hover span span, .btn:focus span, .btn:focus span span {
+      cursor:pointer; /* important for any clickable/pressable element */
+      border-color:#9cf !important;
+      color:#000;
+      }
+    .btn:active span {
+      background-position:0 -400px;
+      outline:none;
+      }
+    .btn:focus, .btn:active {
+      outline:none; /* doesn't seem to be respected for <button>, only <a> */
+      }
+
+    /* use if one button should be the 'primary' button */
+    .primary {
+      font-weight:bold;
+      color:#000;
+      }
+
+
+
+
+
+.rc{background:#6694e3;}
+.rc-assent{font-size:4px;background:#6694e3;height:4px;width:100%;}
+.rc-assent *{width:4px;height:4px}
+.rc-assent-center{width:100%;height:100%;overflow:hidden;}
+.rc-top-left,.rc-bottom-left{float:left;}
+.rc-top-right,.rc-bottom-right{float:right;}
+.rc-top-left{background:url(rc.png) #fff no-repeat 0 0;}
+.rc-top-right{background:url(rc.png) #fff no-repeat -4px 0;}
+.rc-bottom-left{background:url(rc.png) #fff no-repeat 0 -4px}
+.rc-bottom-right{background:url(rc.png) #fff no-repeat -4px -4px;}
+.rc-content{background:#fff;margin:0 4px;}
+
+
+#bar{border-bottom:1px solid #c9d7f1;padding:2px 10px;font-size:13px;clear:both;zoom:1}
+#bar-left{float:left;}
+#bar-right{float:right;}
+
+
+#header{text-align:left;height:59px;}
+#logo{float:left;background-image: url(http://mail.google.com/mail/images/2/5/logo.png); background-position: left top; background-repeat: no-repeat; cursor:pointer;width:143px;height:59px;margin:1px 10px 10px 10px}
+#search{float:left;text-align:left;margin-top:15px;}
+
+
+#sidebar{width:172px;float:left;text-align:left;line-height:150%;}
+#quickLink{text-indent:20px;margin-bottom:15px;}
+#sidebar ul{list-style:none;}
+#sidebar li{text-indent:20px;padding:2px 0;}
+#sidebar li .rc{color:#fff;margin-top:-15px;line-height:120%;}
+#sidebar li .rc a{color:#fff}
+
+#content{background:#6694e3;float:left;width:817px;}
+.content-head,.content-footer{
+	text-align:left;
+	background:#E0ECFF;
+	text-indent:5px;
+	padding:5px 0;
+}
+.content-body{
+	padding:5px;
+	text-align:left;
+}
+
+form{text-indent:20px;width:550px;}
+form div{margin:10px 0;}
+form label{width:120px;display:inline-block;}
+.center{text-align:center;}
+#form-right{width:160px;float:right;margin-right:20px;}
+#form-right input.text{width:100px;text-align:left;}
+
+#footer{font-size:12px;font-weight:normal;color:#000;background:#fff;padding:0px}
+
+
+
+
+/*ËõÂÔÍ¼Ä£Ê½*/
+.vTab{text-align:right;height:28px;}	
+.vList{width:560px;margin:0 auto;overflow:hidden;}
+.videos{width:572px;margin-bottom:-5px;}
+.video{float:left;margin-right:15px;margin-bottom:5px;}

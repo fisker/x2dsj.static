@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type"content="text/html; charset=utf-8"/>
+
+<style type="text/css">
+.cntv_player_css_video_bg{font-size:13px;margin:0;padding:0;background:#000;overflow:hidden;}.cntv_player_css_video_bg a{outline:none;font-size:15px;}#cntv_player_elem_id_text{margin-top:15px;color:white;font-size:20px;}#cntv_player_elem_id_image_box a{display:block;width:177px;height:111px;background-position:0 -52px;background-image:url("cntvplayer/control.jpg");overflow:hidden;}.cntv_player_plugin_bg{margin:0;float:left;}.cntv_player_ie_plugin_button{float:left;display:block;background-color:transparent;background-image:url("cntvplayer/plug-in_button-min.png");background-repeat:no-repeat;width:112px;height:25px;margin:180px -306px;padding:3px 0 0 0;text-align:center;color:#fff;font-size:100%;font-weight:bold;text-decoration:none;}.cntv_player_tip_text{float:left;text-align:center;color:#ddd;font-size:100%;font-weight:bold;margin:230px -375px;width:240px;line-height:25px;}.cntv_player_ff_plugin_button{float:left;display:block;background-color:transparent;background-image:url("cntvplayer/plug-in_button-min.png");background-repeat:no-repeat;width:112px;height:25px;margin-top:8px;text-align:center;line-height:25px;color:#fff;font-size:100%;font-weight:bold;text-decoration:none;}.cntv_player_ff_tip_text{float:left;text-align:center;color:#ddd;font-size:100%;font-weight:bold;padding:0;line-height:45px;}
+</style>
+<script type="text/javascript">
+//cntvplayer/a2.js
+//cntvplayer/sport_live.js
+//cntvplayer/main.js
+//cntvplayer/top_111701.js
+</script>
+<script type="text/javascript" src="cntvplayer/cntv.js"></script>
+
+<script type="text/javascript">function getQuery(name)
+{var reg=new RegExp("(^|&)"+name+"=([^&]*)(&|$)");var r=window.location.search.substr(1).match(reg);if(r!=null)return unescape(r[2]);return null;}
+var zimu='http://d.cntv.cn/text.nghtml?site=cntv%26video=zoumadeng%26smartcount=1';var Empty=cntv.player.util.isEmpty
+var _channel=Empty(getQuery('channel'))?"pa://cctv_p2p_hdcctv5":getQuery('channel');var _width=Empty(getQuery('width'))?560:getQuery('width');var _height=Empty(getQuery('height'))?345:getQuery('height'); _width = new Number(_width);_height = new Number(_height);var _language=Empty(getQuery('language'))?"":getQuery('language');var _zimu=(getQuery('zimu')=="yes")?zimu:"";var _type=Empty(getQuery('type'))?"p2p":getQuery('type');var _loop=(getQuery('loop')==1)?1:0;var _wrating=Empty(getQuery('wrating'))?"":getQuery('wrating');var _adlocal=Empty(getQuery('ad_local'))?"":getQuery('ad_local');var _after=Empty(getQuery('after'))?"":getQuery('after');var _pause=Empty(getQuery('pause'))?"":getQuery('pause');var _corner=Empty(getQuery('corner'))?"":getQuery('corner');var _skin=Empty(getQuery('skin'))?"":getQuery('skin');var _sub=Empty(getQuery('sub'))?"":getQuery('sub');var _open=(getQuery('open')=="yes")?true:false;</script></head><body style="background: #000;margin: 0px;padding: 0px;"><div style="float: left;margin: 0px;padding: 0px;"><div id='testid'></div></div><script type="text/javascript">var params={width:_width,height:_height,topad:_zimu,btmad:_sub,adloading:_adlocal,adcorner:_corner,adafter:_after,adpause:_pause,skin:_skin,videoAddress:_channel,videoType:_type,videoLoop:_loop,wrating:_wrating,lazyload:_open};var main=new cntv.player.main('testid',params);main.start();function Clear(){}
+function Set_Loading(loading_local){_adlocal=Empty(loading_local)?"":loading_local;}
+function Set_After(after_local){_after=Empty(loading_local)?"":loading_local;}
+function Set_Pause(pause_local){_pause=Empty(after_local)?"":after_local;}
+function Set_Corner(corner_local){_corner=Empty(corner_local)?"":corner_local;}
+function Set_Skin(skin_local){_skin=Empty(skin_local)?"":skin_local;}
+function Play(id,type,loop,adtype,adlocal,wrating){_channel=Empty(id)?_channel:id;_type=Empty(type)?_type:type;_loop=Empty(loop)?_loop:loop;_adlocal=Empty(adlocal)?"":adlocal;_wrating=Empty(wrating)?_wrating:wrating;var p={adloading:_adlocal,adcorner:_corner,adafter:_after,adpause:_pause,skin:_skin,videoAddress:_channel,videoType:_type,videoLoop:_loop,wrating:_wrating};main.play(p);}
+function Stop(){}</script></body></html>
